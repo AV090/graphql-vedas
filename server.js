@@ -16,7 +16,8 @@ const server = new ApolloServer({
     typeDefs: configs.schema, resolvers: configs.resolvers, tracing: false, context: async ({ req }) => {
 
         return { 'obj': Date.now() };
-    }
+    },
+    formatError: (err) => { console.error(err); return err; },
 })
 
 server.applyMiddleware({ app, path: "/graphql", });

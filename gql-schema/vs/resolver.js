@@ -3,9 +3,9 @@ const urlgenerator = require('../../utils');
 const resolvers = {
     Query: {
         result: async (root, args, context) => {
-            console.log('context is => ',context);
+           
             let { type, ...dArgs } = args;
-            console.log(type, dArgs)
+         
             let url = urlgenerator(type, dArgs);
             if (url) {
                 let resp = await rp.get(url)

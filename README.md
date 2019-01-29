@@ -1,7 +1,7 @@
 # graphql-vedas
 A simple graphql application which talks to vedic services in backend
 
-#Description
+# Description
 This is a nodejs application based on Express and "apollo-graphql-express". The application used below APIs to fulfill graphql queries
 
 

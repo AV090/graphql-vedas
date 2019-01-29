@@ -28,4 +28,4 @@ app.listen(3001, () => {
     console.log('server started at 3001')
 })
 
-module.exports = { server }
+module.exports = app 

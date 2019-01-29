@@ -3,7 +3,7 @@ const urlgenerator = require('../../utils');
 const resolvers = {
     Query: {
         result: async (root, args, context) => {
-           
+            console.log(args)
             let { type, ...dArgs } = args;
          
             let url = urlgenerator(type, dArgs);

@@ -1,0 +1,35 @@
+{
+  "name": "graphql_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && webpack --mode=development",
+    "launch": "node ./dist/bundle.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.3.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "apollo-server-testing": "^2.3.2",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.2",
+    "webpack": "^4.29.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

@@ -2,7 +2,7 @@ const urlconfig = require('./urlconfig');
 
 exports.urlGenerator = (config, args) => {
     if (config && args && Object.keys(args).length > 0) {
-
+        console.log('here')
         let configObj = urlconfig[config];
         if (configObj) {
             let uri = `${urlconfig.baseURL}${configObj.path}?`

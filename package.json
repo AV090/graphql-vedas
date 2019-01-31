@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests --timeout 10000",
-    "build": "rm -rf dist && webpack --mode=development",
-    "launch": "node ./dist/bundle.js",
-    "start": "node server.js"
+    "dev-start":"npm run build && npm-run-all --parallel build-watch launch",
+    "build":"webpack",
+    "build-watch": "webpack --mode=development",
+    "launch": "nodemon ./dist/bundle.js",
+    "start": "rm -fr ./dist && npm run build && node server.js"
   },
   "keywords": [],
   "author": "",
